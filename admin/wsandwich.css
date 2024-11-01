@@ -1,0 +1,52 @@
+@charset "utf-8";
+/**
+ * @author http://www.wsandwich.com/
+ */
+
+.wsandwich-wrap { float: left; padding-right: 10px; max-width: 1056px; }
+.wsandwich-header { float: left; margin: 0; padding: 30px 0; width: 100%; height: 60px; line-height: 60px; }
+.wsandwich-header-left { float: left; margin: 0; padding: 0; }
+.wsandwich-header-left img { width: 100%; max-width: 446px; }
+.wsandwich-header-right { float: right; }
+
+.wsandwich-button { padding: 8px 9px; font-size: 12px; border: 1px solid #e6e6e6; border-radius: 5px; background-color: white; color: #2e2e2e !important; font-family: '나눔고딕 ExtraBold'; text-decoration: none; }
+.wsandwich-button:active,
+.wsandwich-button:hover { color: #2e2e2e; }
+.wsandwich-button img { vertical-align: middle; }
+.wsandwich-button-active { border-color: #e03d00; background-color: #fe4500; color: white !important; }
+.wsandwich-button-active:active,
+.wsandwich-button-active:hover { color: white; }
+.wsandwich-button-gray { border-color: #e6e6e6; background-color: #e6e6e6; color: #2e2e2e !important; }
+.wsandwich-button-gray:active,
+.wsandwich-button-gray:hover { color: #2e2e2e; }
+
+.wsandwich-dashboard-list { float: left; margin: 0; padding: 0; width: 100%; }
+.wsandwich-dashboard-list ul { float: left; margin: 0; padding: 0; width: 100%; }
+.wsandwich-dashboard-list ul li { position: relative; float: left; margin: 0 0 60px 0; padding: 60px 0 0 0; width: 50%; border-top: 1px solid #e6e6e6; font-size: 12px; }
+.wsandwich-dashboard-list .wsandwich-dashboard-list-thumbnail { float: left; padding-right: 30px; }
+.wsandwich-dashboard-list .wsandwich-dashboard-list-thumbnail-beta { position: absolute; left: -3px; top: 57px; }
+.wsandwich-dashboard-list .wsandwich-dashboard-list-name { padding: 10px 0 0 0; font-family: '나눔고딕'; }
+.wsandwich-dashboard-list .wsandwich-dashboard-list-name h3 { margin: 0; padding: 0; font-size: 18px; }
+.wsandwich-dashboard-list .wsandwich-dashboard-list-version { padding: 10px 20px 0 0; font-family: '나눔고딕'; }
+.wsandwich-dashboard-list .wsandwich-dashboard-list-version .wsandwich-version {}
+.wsandwich-dashboard-list .wsandwich-dashboard-list-version .wsandwich-latest-version { display: block; float: right; color: gray; }
+.wsandwich-dashboard-list .wsandwich-dashboard-list-version .wsandwich-latest-version a { text-decoration: none; color: #fe4500; }
+.wsandwich-dashboard-list .wsandwich-dashboard-list-description { padding: 10px 20px 0 0; font-family: '나눔고딕'; }
+.wsandwich-dashboard-list .wsandwich-dashboard-list-control { position: absolute; left: 210px; bottom: 20px; }
+
+.wsandwich-pagination { width: 100%; }
+.wsandwich-pagination li { float: left; }
+.wsandwich-pagination li a { display: inline-block; padding: 5px; font-size: 18px; text-decoration: none; }
+.wsandwich-pagination li.active a { font-weight: bold; color: black; }
+
+@media (max-width: 900px) {
+	.wsandwich-header { height: 120px; }
+	.wsandwich-header-right { clear: both; float: left; }
+	.wsandwich-dashboard-list ul li { width: 100%; }
+	
+	.wsandwich-dashboard-list .wsandwich-dashboard-list-name { padding: 5px 0 0 0; }
+	.wsandwich-dashboard-list .wsandwich-dashboard-list-name h3 { font-size: 15px; }
+	.wsandwich-dashboard-list .wsandwich-dashboard-list-version { padding: 5px 10px 0 0; }
+	.wsandwich-dashboard-list .wsandwich-dashboard-list-description { padding: 5px 10px 0 0; }
+	.wsandwich-dashboard-list .wsandwich-dashboard-list-control { bottom: 15px; }
+}
